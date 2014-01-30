@@ -1,0 +1,33 @@
+class GroceryList
+   
+
+    @@cost_hash { eggs: 1.10, milk: 2.17 , butter 1.24 }
+
+   def initialize
+   
+    @list =[]
+    @cost = 0
+   
+
+   end 
+
+
+   def AddItem(item)
+     
+    @list << item
+    if @@cost_hash.include? item
+        cost += @@cost_hash[item.to_sym]
+    else
+      puts "error---- item not found in database"
+
+    end
+
+
+  def RemoveItem
+    @list.delete(item)
+
+
+
+
+
+   end

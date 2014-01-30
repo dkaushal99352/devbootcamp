@@ -1,0 +1,19 @@
+
+
+name2 = { first: Dinesh , last: Kaushal }
+
+
+
+
+
+
+
+def format_name(name)
+  return "#{name[:last]}, #{name[:first]}"
+end
+
+def display_name(name)
+  puts format_name(name)
+end
+
+end

@@ -1,0 +1,46 @@
+class PezDispenser
+
+
+
+def initialize(flavors)
+
+  @list_of_flavors =  flavors
+
+end
+
+
+
+
+def add_pez(flavor)
+   @list_of_flavors << flavor 
+end
+
+
+def get_pez
+
+   @list_of_flavors.pop
+
+end
+
+def see_all_pez
+      
+      @list_of_flavors
+
+end
+
+def pez_count
+
+    @list_of_flavors.count
+end
+
+
+end
+
+
+
+
+flavors = %w(cherry chocolate cola grape lemon orange peppermint raspberry strawberry).shuffle
+super_mario=  PezDispenser.new(flavors)
+puts super_mario.see_all_pez 
+
+

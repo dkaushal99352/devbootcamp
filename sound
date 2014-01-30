@@ -1,0 +1,6 @@
+
+require 'win32/sound'
+include Win32
+
+
+Sound.beep(100, 500)

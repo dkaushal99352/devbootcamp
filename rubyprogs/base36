@@ -1,0 +1,31 @@
+
+hash_array = ["123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
+
+
+
+
+
+
+
+
+
+
+
+
+def convert_to_base_36(integer)
+
+  highest_digit = integer / 46656
+  highest_remainder = integer - ( highest_dight * 46656)
+  second_digit =  highest_remainder / 1296
+  second_remainder = first_remainder - (second_digit * 1296)
+  third_digit = second_remainder/ 36
+  third_remainder = second_remainder - (third_dight * 36)
+   
+  return "#{highest_digit}   #{second_digit}  #{third_digit}  #{third_remainder} " 
+
+ end
+
+
+convert_to_base_36(688090)
+
+

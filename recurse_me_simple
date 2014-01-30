@@ -1,0 +1,10 @@
+def recurse_me_simple(times)
+  if times == 0
+    puts "we hit the base case! times = 0!"
+  else
+    puts "before calling recurse_me_simple.  times=#{times}"
+    recurse_me_simple(times-1)
+  end
+end
+
+recurse_me_simple(5)
